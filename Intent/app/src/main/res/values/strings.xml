@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="daftar">Daftar</string>
+    <string name="nim">nim</string>
+    <string name="handphone_abbr">HP</string>
+    <string name="handphone">Handphone</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="jenis_tempat_tinggal">Jenis Tempat Tinggal</string>
+    <string name="simpan">Simpan</string>
+    <string name="kirim_pesan">Kirim\nPesan</string>
+
+    <string-array name="jenis_rumah">
+        <item>Rumah Tinggal</item>
+        <item>Rumah Kontrak</item>
+    </string-array>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="42dp"
+    android:paddingEnd="42dp"
+    tools:context=".BiodataActivity">
+    
+    <TextView
+        android:id="@+id/tvNimBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvHpBio"
+        tools:text="NIM : xxxxxx"/>
+
+    <TextView
+        android:id="@+id/tvHpBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/tvNimBio"
+        app:layout_constraintBottom_toTopOf="@id/tvAlamatBio"
+        tools:text="HP : 081......"/>
+
+    <TextView
+        android:id="@+id/tvAlamatBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/tvHpBio"
+        app:layout_constraintBottom_toTopOf="@id/tvJenisTempatTinggalBio"
+        tools:text="Alamat : ......"/>
+
+    <TextView
+        android:id="@+id/tvJenisTempatTinggalBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/tvAlamatBio"
+        app:layout_constraintBottom_toTopOf="@id/btnShare"
+        tools:text="Jenis Tinggal : ......."/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvJenisTempatTinggalBio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/kirim_pesan"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

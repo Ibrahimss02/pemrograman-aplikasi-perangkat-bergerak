@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="42dp"
+    android:paddingEnd="42dp"
+    tools:context=".DaftarActivity">
+
+    <TextView
+        android:id="@+id/tvNimDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etNimDaftar"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:text="@string/nim"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/etNimDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvNimDaftar"
+        app:layout_constraintBottom_toTopOf="@id/tvHpDaftar"
+        android:layout_marginBottom="14dp"
+        android:hint="@string/nim"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tvHpDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etNimDaftar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etHpDaftar"
+        android:text="@string/handphone_abbr"/>
+
+    <EditText
+        android:id="@+id/etHpDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvHpDaftar"
+        app:layout_constraintBottom_toTopOf="@id/tvNamaDaftar"
+        android:layout_marginBottom="14dp"
+        android:hint="@string/handphone"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tvNamaDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etHpDaftar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etNamaDaftar"
+        android:text="@string/nama"/>
+
+    <EditText
+        android:id="@+id/etNamaDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaDaftar"
+        app:layout_constraintBottom_toTopOf="@id/tvAlamatDaftar"
+        android:layout_marginBottom="14dp"
+        android:hint="@string/nama"/>
+
+    <TextView
+        android:id="@+id/tvAlamatDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etNamaDaftar"
+        app:layout_constraintBottom_toTopOf="@id/etAlamatDaftar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/alamat"/>
+
+    <EditText
+        android:id="@+id/etAlamatDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alamat"
+        app:layout_constraintTop_toBottomOf="@id/tvAlamatDaftar"
+        app:layout_constraintBottom_toTopOf="@id/tvJenisTempatTinggal"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/tvJenisTempatTinggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etAlamatDaftar"
+        app:layout_constraintBottom_toTopOf="@id/spinnerJenisTempatTinggal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/jenis_tempat_tinggal"/>
+
+    <Spinner
+        android:id="@+id/spinnerJenisTempatTinggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvJenisTempatTinggal"
+        app:layout_constraintBottom_toTopOf="@id/btnSimpanDaftar"
+        style="@style/spinner_style"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSimpanDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simpan"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerJenisTempatTinggal" />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
